@@ -1,0 +1,46 @@
+.header {
+  padding-top: 45px;
+  background-color: #fff;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-logo {
+    height: 36px;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    &-item:not(:first-child) {
+      margin-left: 40px;
+    }
+    &-link {
+      color: $text-color;
+    }
+  }
+  &-auth {
+    .signIn {
+      font-weight: 500;
+      color: $text-color;
+    }
+    .signUp {
+      width: 150px;
+      height: 45px;
+      font-weight: 500;
+      color: $primary-color;
+      border-radius: 50px;
+      border: solid 1px;
+      padding: 14px 45px;
+      // color: black;
+      margin-left: 30px;
+    }
+  }
+}
+@media screen and(max-width: 1023px) {
+  .header {
+    .menu {
+      display: none;
+    }
+  }
+}

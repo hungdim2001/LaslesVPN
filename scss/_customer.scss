@@ -1,0 +1,90 @@
+.customer {
+  padding-top: 50px;
+  .title {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .description {
+    max-width: 555px;
+    margin: 20px auto 0;
+  }
+  &-list {
+    // display: flex;
+    // justify-content: space-between;
+    // gap: 0 50px;
+  }
+  &-item {
+    margin-top: 60px;
+    padding: 30px;
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      &-infor {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+        &-name {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+      }
+      &-rate {
+        display: flex;
+        gap: 0 10px;
+      }
+    }
+  }
+  .slick-track {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 50px;
+    position: relative;
+    .slick-active {
+      @extend .non-act;
+      &.slick-current {
+        @extend .act;
+      }
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    gap: 0 15px;
+    align-items: center;
+    margin-top: 60px;
+    button {
+      font-size: 0;
+      width: 15px;
+      height: 15px;
+      background-color: $gray-color;
+      border-radius: 50%;
+      border: none;
+    }
+  }
+  .slick-active {
+    button {
+      width: 35px;
+      height: 15px;
+      background-color: $primary-color;
+      border-radius: 15px;
+    }
+  }
+  .slick-arrow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 0;
+    top: calc(100% - 60px);
+    left: calc(100% - 200px);
+  }
+  .slick-prev {
+    border: 2px solid $primary-color;
+    left: calc(100% - 280px);
+  }
+  .slick-next {
+    background-color: $primary-color;
+  }
+}

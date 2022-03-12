@@ -1,0 +1,35 @@
+.subscribe {
+  padding-top: 70px;
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 233px;
+    padding: 60px 70px;
+    border-radius: 10px;
+    box-shadow: 10px 20px 100px 10px rgba(13, 16, 37, 0.06);
+    
+  }
+  .button{
+    margin-top: 0;
+  }
+  &-left {
+    width: 370px;
+   .title{
+       text-align: start;
+       line-height: 45px;
+   }
+   .description{
+       text-align: start;
+       margin: 0;
+   }
+  }
+}
+@media screen and(max-width: 1023px) {
+  .subscribe {
+    .button{
+      // width: 100px;
+    }
+  }
+}

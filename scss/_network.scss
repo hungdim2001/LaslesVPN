@@ -1,0 +1,23 @@
+.network {
+  padding-top: 150px;
+  .title {
+    margin: 0 auto;
+    max-width: 383px;
+  }
+  .description {
+    margin: 26px auto 155px;
+    max-width: 555px;
+  }
+  &-image {
+    margin: 0 auto;
+    max-width: 1060px;
+    display: block;
+  }
+}
+@media screen and(max-width: 1023px) {
+  .network {
+    &-image {
+      max-width: 100%;
+    }
+  }
+}
